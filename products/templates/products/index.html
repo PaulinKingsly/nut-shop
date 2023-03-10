@@ -1,0 +1,25 @@
+{% extends 'products/base.html'%}
+{% load static %}
+
+<title>{{ title }}</title>
+
+{% block content %}
+
+<!-- Showcase -->
+
+<section class="bg-light dark p-5 text-center">
+    <div class="container">
+        <div class="d-sm-flex ">
+            <div>
+                <p class="lead"> Сайт является итоговым проектом ученицы онлайн школы Бруноям - Царьковой Полины</p>
+
+                <a href="{% url 'products:catalog' %}"><button type="button"  class="btn btn-primary" disabled>Перейти в каталог</button></a>
+            </div>
+            <img class="img-fluid w-50 d-none d-sm-block" src="{% static 'products/img/pngwing.com.png' %}">
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}
+
